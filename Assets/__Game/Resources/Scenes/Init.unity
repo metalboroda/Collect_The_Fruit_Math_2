@@ -1869,21 +1869,6 @@ MonoBehaviour:
   _loseScreenClip: {fileID: 8300000, guid: cac067f14ac1b4e4a832b0f7b594b447, type: 3}
   _pauseScreenClip: {fileID: 8300000, guid: a0b594a1d84e5e84ab8fb38de5888bc7, type: 3}
   _buttonClip: {fileID: 8300000, guid: c87ea942c7d4e0a4483e8c0172176fd3, type: 3}
-  _winAnnouncerClips:
-  - {fileID: 8300000, guid: 415019c34f4b59341994b0222e61ff03, type: 3}
-  - {fileID: 8300000, guid: fc576c5bf8ff8ff48be18de5b3135c53, type: 3}
-  - {fileID: 8300000, guid: 668c6fdb870edbf4283c788eeee121d3, type: 3}
-  - {fileID: 8300000, guid: b89429da6f34b4f4ab2e707c771d4ea6, type: 3}
-  - {fileID: 8300000, guid: bc0ebd6572ba71e4c8b4dab272e4a622, type: 3}
-  - {fileID: 8300000, guid: 499e829bc8d63c8449cb4f9a169b2d94, type: 3}
-  _loseAnnouncerClips:
-  - {fileID: 8300000, guid: 3903582ac7c319f4db8c19a429c3ffb2, type: 3}
-  - {fileID: 8300000, guid: fb0674ef8bbdf66428edeba72c0260c2, type: 3}
-  - {fileID: 8300000, guid: f3b8893ce4868bb4587810065aab3fac, type: 3}
-  _stuporAnnouncerClips:
-  - {fileID: 8300000, guid: 9036e48a1a7974f47a07dc139e1d4fc8, type: 3}
-  - {fileID: 8300000, guid: ad2132597fcac874d8a3a028beaa982c, type: 3}
-  - {fileID: 8300000, guid: 5f5f1ac42a37e6c428293c1111d875d4, type: 3}
 --- !u!82 &1349554957
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2179,7 +2164,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1500, y: 200}
+  m_SizeDelta: {x: 1500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868957867
 MonoBehaviour:
@@ -2309,17 +2294,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041C\u0410\u0422\u0415\u041C\u0410\u0422\u0418\u041A\u0410"
+  m_text: "\u041C\u0410\u0422\u0415\u041C\u0410\u0422\u0418\u041A\u0410\n2"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 88bbc78a9d4eb144db95ca1121858711, type: 2}
-  m_sharedMaterial: {fileID: 1802962409221402600, guid: 88bbc78a9d4eb144db95ca1121858711, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c8d9743c67ed70c48b1ffc142f8e6e13, type: 2}
+  m_sharedMaterial: {fileID: 1802962409221402600, guid: c8d9743c67ed70c48b1ffc142f8e6e13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289429759
-  m_fontColor: {r: 1, g: 0.5019608, b: 0.67058825, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2336,7 +2321,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 134.45
+  m_fontSize: 119.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -812,7 +812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c8d9743c67ed70c48b1ffc142f8e6e13, type: 2}
   m_sharedMaterial: {fileID: 1802962409221402600, guid: c8d9743c67ed70c48b1ffc142f8e6e13, type: 2}
@@ -907,7 +907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &341705039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1533,7 +1533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc27ee3ad5492044cb4bab47673f9998, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cd592a620d42b240adac48f7da1dcea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3820,7 +3820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a342fcfc2f17715459034f7e4f68ce96, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea18ab05edad9194bb1762e177f3dd9a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5849,7 +5849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e7c2298af911a0e4bbc31f472ae76f0c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acfa884ab7aa74241b2387562c594a18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7884,7 +7884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f404eaef0ef98c14e8b3c29f22e260b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb1f7a44ab9bcf74b8b85a59376ed358, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8355,7 +8355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc27ee3ad5492044cb4bab47673f9998, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cd592a620d42b240adac48f7da1dcea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
