@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5322166287789507229, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: _basketNumberText
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5381777621544629463, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: m_text
@@ -118,6 +118,14 @@ PrefabInstance:
     - target: {fileID: 7776220956402797172, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797173, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: _treeItemsDatas.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797173, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: _treeItemsDatas.Array.data[2].<Amount>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7776220956402797173, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: _treeItemsDatas.Array.data[0].<NarrationCLip>k__BackingField
