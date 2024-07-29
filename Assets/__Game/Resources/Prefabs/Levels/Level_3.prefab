@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 7584315563464119882, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: _questAudio
       value: 
-      objectReference: {fileID: 8300000, guid: 995800a4be917da4eabfb14fc3a9688b, type: 3}
+      objectReference: {fileID: 8300000, guid: c015535c8a7e60a4cb50eee6034c6ff8, type: 3}
     - target: {fileID: 7776220956402797173, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: _correctValuesContainerSo
       value: 
@@ -206,6 +206,14 @@ PrefabInstance:
     - target: {fileID: 7776220956402797173, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: _treeItemsDatas.Array.data[3].<Amount>k__BackingField
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: m_Height
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: m_Radius
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 8431954983874841978, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: anchorOffset.x

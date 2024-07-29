@@ -114,7 +114,7 @@ PrefabInstance:
     - target: {fileID: 7584315563464119882, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: _questAudio
       value: 
-      objectReference: {fileID: 8300000, guid: 8376797b1a25f324aa764fd1ca9d1af9, type: 3}
+      objectReference: {fileID: 8300000, guid: 08f5024f63e71c1428be08ecca99c678, type: 3}
     - target: {fileID: 7776220956402797172, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -155,6 +155,14 @@ PrefabInstance:
       propertyPath: _treeItemsDatas.Array.data[4].<NarrationCLip>k__BackingField
       value: 
       objectReference: {fileID: 8300000, guid: a8eb80f5936092046bc023e8c882a9ec, type: 3}
+    - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: m_Height
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: m_Radius
+      value: 1.75
+      objectReference: {fileID: 0}
     - target: {fileID: 8738646877908123585, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
