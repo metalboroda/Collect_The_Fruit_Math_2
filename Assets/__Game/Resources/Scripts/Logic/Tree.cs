@@ -22,22 +22,17 @@ namespace Assets.__Game.Resources.Scripts.Logic
 
     private CapsuleCollider _capsuleCollider;
 
-    private void Awake()
-    {
+    private void Awake() {
       _capsuleCollider = GetComponent<CapsuleCollider>();
     }
 
-    private void Start()
-    {
+    private void Start() {
       StartCoroutine(DoSpawnTreeItems());
     }
 
-    private IEnumerator DoSpawnTreeItems()
-    {
-      foreach (var treeItemData in _treeItemsDatas)
-      {
-        for (int i = 0; i < treeItemData.Amount; i++)
-        {
+    private IEnumerator DoSpawnTreeItems() {
+      foreach (var treeItemData in _treeItemsDatas) {
+        for (int i = 0; i < treeItemData.Amount; i++) {
           SpawnTreeItem(treeItemData);
         }
       }
@@ -46,16 +41,14 @@ namespace Assets.__Game.Resources.Scripts.Logic
 
       _capsuleCollider.enabled = false;
 
-      EventBus<EventStructs.SpawnedItemsEvent>.Raise(new EventStructs.SpawnedItemsEvent
-      {
+      EventBus<EventStructs.SpawnedItemsEvent>.Raise(new EventStructs.SpawnedItemsEvent {
         CorrectValuesContainerSo = _correctValuesContainerSo,
         CorrectItems = _correctItems,
         IncorrectItems = _incorrectItems
       });
     }
 
-    private void SpawnTreeItem(TreeItemData treeItemData)
-    {
+    private void SpawnTreeItem(TreeItemData treeItemData) {
       Vector3 spawnPosition = GetRandomSpawnPosition();
       TreeItem itemToSpawn = treeItemData.ItemsToSpawn;
       TreeItem spawnedItem = Instantiate(itemToSpawn, spawnPosition, Quaternion.identity, transform);
@@ -71,17 +64,20 @@ namespace Assets.__Game.Resources.Scripts.Logic
         _incorrectItems.Add(spawnedItem);
     }
 
-    private Vector3 GetRandomSpawnPosition()
-    {
-      Vector3 spawnPosition;
+    private Vector3 GetRandomSpawnPosition() {
+      Vector3 spawnPosition = Vector3.zero;
       int attempts = 0;
 
-      do
-      {
+      do {
         float x = Random.Range(-_capsuleCollider.radius, _capsuleCollider.radius);
-        float y = Random.Range(-_capsuleCollider.height, _capsuleCollider.height);
+        float y = Random.Range(-_capsuleCollider.height / 2, _capsuleCollider.height / 2);
 
-        spawnPosition = new Vector3(x, y, 0) + transform.position;
+        // Ensure the point is within the circular section of the capsule
+        if (x * x + y * y > _capsuleCollider.radius * _capsuleCollider.radius) {
+          continue;
+        }
+
+        spawnPosition = new Vector3(x, y, 0) + _capsuleCollider.center + transform.position;
         attempts++;
       }
       while (IsPositionValid(spawnPosition) == false && attempts < 100);
@@ -89,10 +85,8 @@ namespace Assets.__Game.Resources.Scripts.Logic
       return spawnPosition;
     }
 
-    private bool IsPositionValid(Vector3 position)
-    {
-      foreach (var spawnedPosition in _spawnedPositions)
-      {
+    private bool IsPositionValid(Vector3 position) {
+      foreach (var spawnedPosition in _spawnedPositions) {
         if (Vector3.Distance(position, spawnedPosition) < _minObjectSpawnDistance)
           return false;
       }

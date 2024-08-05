@@ -209,11 +209,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: m_Height
-      value: 2.75
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: m_Radius
-      value: 1.75
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776220956402797174, guid: a454cc821da5e1b419971d0230763865, type: 3}
+      propertyPath: m_Center.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8431954983874841978, guid: a454cc821da5e1b419971d0230763865, type: 3}
       propertyPath: anchorOffset.x
